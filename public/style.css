@@ -4,7 +4,7 @@ html, body {
 
 .container {
     position: relative;
-    top: 50%;
-    transform: translateY(-100%);
+    /*top: 100%;*/
+    /*transform: translateY(-100%);*/
     text-align: center;
 }
