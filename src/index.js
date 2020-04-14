@@ -67,10 +67,10 @@ function editMovie(movieId) {
   fetch(url, options)
       .then((title, rating, id) => {$('.container').html(renderMovies(title, rating, id))})
       .catch(function() {
-        console.log("Hey we couldn't edit a movie or update them.")
-      });
+        console.log("Hey we couldn't edit a movie or update them.");
 
-  renderMovies();
+      });
+        renderMovies();
 }
 
 // EDIT MOVIES MODAL
