@@ -1,3 +1,22 @@
+function renderMovies(title,rating, id) {
+
+  //declare empty variable to hold HTML that is being dynamically created
+  return `
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+      <h5 class="card-title">${title}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">${rating}</h6>
+      <button id="${id}" class="edit-movie" type="button" class="btn btn-secondary">Edit</button>
+      </div>
+    </div>
+  `;
+
+
+
+} //renderMovies()
+
+renderMovies(); //intial call
+
 function getMovies() {
   return fetch('/api/movies')
       .then(response => response.json());
@@ -81,22 +100,6 @@ getMovies().then((movies) => {
 
 //DYNAMICALLY CREATES HTML BASED ON WHAT IS IN db.json
 
-function renderMovies(title,rating, id) {
-
-  //declare empty variable to hold HTML that is being dynamically created
-  return `
-    <div class="card" style="width: 18rem">
-      <div class="card-body">
-      <h5 class="card-title">${title}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">${rating}</h6>
-      <button id="${id}" class="edit-movie" type="button" class="btn btn-secondary">Edit</button>
-      </div>
-    </div>
-  `;
-
-
-
-} //renderMovies()
 
 //ADDS A MOVIE TO DATABASE ON CLICK
 

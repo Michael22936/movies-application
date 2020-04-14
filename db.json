@@ -1,8 +1,8 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
+      "title": "casab",
+      "rating": "1",
       "id": 1
     },
     {
@@ -24,6 +24,11 @@
       "title": "Harry Potter",
       "rating": "4",
       "id": 5
+    },
+    {
+      "title": "hello",
+      "rating": "1",
+      "id": 6
     }
   ]
 }
