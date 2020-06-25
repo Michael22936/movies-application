@@ -10,3 +10,7 @@ html, body {
     flex-wrap: wrap;
     text-align: center;
 }
+
+.form-control{
+    width: 100px !important;
+}
