@@ -3,8 +3,10 @@ html, body {
 }
 
 .container {
+    margin: auto;
     position: relative;
-    /*top: 100%;*/
-    /*transform: translateY(-100%);*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
 }
