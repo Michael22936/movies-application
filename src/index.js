@@ -2,7 +2,7 @@ function renderMovies(title,rating, id) {
 
   //declare empty variable to hold HTML that is being dynamically created
   return `
-    <div class="card" style="width: 18rem">
+    <div class="card" style="width: 18rem; color: white; background-color: black">
       <div class="card-body">
       <h5 class="card-title">${title}</h5>
       <h6 class="card-subtitle mb-2 text-muted">${rating}</h6>
@@ -104,6 +104,10 @@ getMovies().then((movies) => {
 //ADDS A MOVIE TO DATABASE ON CLICK
 
 
-$('#add-movie-btn').on("click", function() {
-  addMovie();
+$('#myButton').on("click", function() {
+  $('#myModal1').modal('toggle');
+
+  $('#add-movie-btn').on('click',function () {
+    addMovie();
+  })
 });

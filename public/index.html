@@ -13,24 +13,38 @@
 </div>
 
 <div>
+    <button id="myButton">add movie</button>
     <form>
-        <div class="form-group">
-            <label for="new-movie-title">Enter Movie Title</label>
-            <input type="text" id="new-movie-title" name="new-movie-title">
-            <label for="new-movie-rating">Select Movie Rating</label>
-            <select class="form-control" id="new-movie-rating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <button id="add-movie-btn" type="submit">Add Movie</button>
+
+        <div class="modal" id="myModal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="form-group">
+                            <label for="new-movie-title">Enter Movie Title</label>
+                            <input type="text" id="new-movie-title" name="new-movie-title">
+                            <br>
+                            <form>
+                            <label for="new-movie-rating">Select Movie Rating</label>
+                            <select class="form-control" id="new-movie-rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            </form>
+                            <div class="modal-footer">
+                            <button id="add-movie-btn" type="submit">Add Movie</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </div>
 
-<button class="edit-movie" type="submit">Edit me</button>
 
 <div class="modal" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
