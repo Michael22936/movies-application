@@ -14,3 +14,13 @@ html, body {
 .form-control{
     width: 100px !important;
 }
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.edit-movie{
+    background-color: blue;
+    color: white;
+}
