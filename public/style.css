@@ -19,3 +19,8 @@ html, body {
     display: flex;
     justify-content: center;
 }
+
+.edit-movie{
+    background-color: blue;
+    color: white;
+}
