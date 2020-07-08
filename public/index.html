@@ -16,20 +16,22 @@
 
 <div>
     <form>
-
         <div class="modal" id="myModal1" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                            <h5 class="modal-title">Add Movie:</h5>
+                            <h4 class="modal-title">Add Movie:</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times</span>
+                        </button>
                     </div>
                         <hr>
                         <div class="form-group">
-                            <label for="new-movie-title">Enter Movie Title</label>
+                            <h4><label for="new-movie-title">Enter Movie Title</label></h4>
                             <input type="text" id="new-movie-title" name="new-movie-title">
                             <br>
                             <form>
-                            <span><label for="new-movie-rating">Select Movie Rating</label></span>
+                                <h4><span><label for="new-movie-rating">Select Movie Rating</label></span></h4>
                             <select class="form-control" id="new-movie-rating">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -45,7 +47,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </form>
 </div>
 
